@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<title>春晚发红包</title>
+<link rel="stylesheet" href="css/csshake.min.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/zepto.min.js"></script>
+<script src="js/red.js"></script>
+</head>
+<body>
+<!-- 红包 -->
+<div class="red"><!-- shake-chunk -->
+    <img id="bac_img" src="img/red-w.png" />
+    <button class="redbutton" style="font-size:5vw;">$</button>
+    <div class="red-jg">
+        <h1>恭喜您获得以下奖励</h1>
+        <h4 id="app">{{message}}元现金红包</h4>
+        <img src="img/a83c480867ad451bb5fa855ec2bbc977.png" style="width:15vw;height:15vw; border-radius:0; position:absolute; top:20vw; left:37%;" />
+    </div>
+</div>
+
+<!--开发环境版本，包含了有帮助的命令行警告-->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+	var app = new Vue({
+		el:"#app",
+		data:{
+			message : Math.floor(Math.random()*30)/1,
+		}
+	})
+
+</script>
+
+
+<!-- End 红包 -->
+<!-- 按钮 -->
+<!--<div class="t-btn">
+    <button>立即领取</button>
+</div>-->
+<!-- End 按钮 -->
+<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+<p>网页设计：Yoho Jane &nbsp;&nbsp; 动画主题：春晚大红包 </p>
+<p>新春速递：<a href="https://live.baidu.com/m/media/pclive/pchome/live.html?room_id=7030985317&source=h5pre" target="_blank">围观东北虎拆箱新春大礼包！</a></p>
+</div>
+</body>
+</html>
+
